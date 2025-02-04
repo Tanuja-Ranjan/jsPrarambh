@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+</head>
+<body>
+    <h1>Chai Aur javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+const sayDate = function(){
+    console.log("Tanuja Ranjan");
+    console.log( Date.now());
+   }
+
+//    const intervalId = setInterval(sayDate,
+//     1000, 'hi')
+//    clearInterval(intervalId)
+
+let startExecute;
+const start = document.querySelector('#start')
+ start.addEventListener('click' ,function(){
+     startExecute = setInterval(sayDate, 1000)
+})
+
+const stop = document.querySelector('#stop')
+ stop.addEventListener('click' ,function(){
+    clearInterval(startExecute)
+    console.log('execution stopped');
+    
+})
+
+</script>
+</html>

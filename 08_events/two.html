@@ -16,17 +16,18 @@
     // },2000)
 
     const sayTanu = function(){
-        console.log("tanuja");
-        
+        console.log("tanuja");  
     }
+
     const changeText = function(){
         document.querySelector('h1').
         innerHTML = 'best js series'
     }
+
     const changeMe = (changeText ,2000)
 
     document.querySelector('#stop').
-    addEventListener('click',function(){
+    addEventListener('click' ,function(){
         clearTimeout(changeMe)
         console.log('Stopped');
         
